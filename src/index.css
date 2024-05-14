@@ -1,13 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.cdnfonts.com/css/rubik");
+@import url("https://fonts.cdnfonts.com/css/karla");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik", sans-serif; 
+  background-color: #17202c !important;
+  color: white !important
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(./assets/bg-001-free-img.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: auto !important;
+  background-attachment: fixed !important;
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+}
+
+.heading{
+  color: white !important;
+  font-family: "Rubik", sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 600 !important;
+}
+
+.heading2{
+  color: white !important;
+  font-family: "Rubik", sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 600 !important;
+}
+
+.home {
+  background-image: url(./assets/webforgebg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.home::beforee {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.332
+  ); /* Adjust alpha value for desired opacity */
+}
+
+.line {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+    ),
+    url(./assets/bg-001-free-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+.backbg {
+  background: linear-gradient(to bottom, #06101478 10%, #0D0614 30%);
+  background-position: ;
+}
+
+
+
+
+
+
+/*! elementor - v3.20.0 - 20-03-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked
+  .elementor-drop-cap {
+  background-color: #69727d;
+  color: #fff;
+}
+.elementor-widget-text-editor.elementor-drop-cap-view-framed
+  .elementor-drop-cap {
+  color: #69727d;
+  border: 3px solid;
+  background-color: transparent;
+}
+.elementor-widget-text-editor:not(.elementor-drop-cap-view-default)
+  .elementor-drop-cap {
+  margin-top: 8px;
+}
+.elementor-widget-text-editor:not(.elementor-drop-cap-view-default)
+  .elementor-drop-cap-letter {
+  width: 1em;
+  height: 1em;
+}
+.elementor-widget-text-editor .elementor-drop-cap {
+  float: left;
+  text-align: center;
+  line-height: 1;
+  font-size: 50px;
+}
+.elementor-widget-text-editor .elementor-drop-cap-letter {
+  display: inline-block;
 }
